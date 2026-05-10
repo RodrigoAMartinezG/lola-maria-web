@@ -181,7 +181,7 @@ export default function Contact() {
                   ¡Pedido listo para enviar!
                 </h4>
                 <p className="text-warm-brown/70">
-                  Se abrió WhatsApp con tu pedido. Solo tenés que presionar "Enviar".
+                  Se abrió WhatsApp con tu pedido. Solo tenés que presionar &quot;Enviar&quot;.
                 </p>
               </motion.div>
             ) : (
