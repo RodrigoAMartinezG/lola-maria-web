@@ -67,9 +67,12 @@ export default function Hero() {
 
         <motion.h1
           variants={childVariants}
-          className="font-serif text-6xl md:text-8xl lg:text-9xl font-bold text-white mb-6 leading-tight"
-        >
-          Lola Maria
+          className="font-serif text-6xl md:text-8xl lg:text-9xl font-bold text-white mb-6 leading-tight">
+           <img 
+              src="/images/logo.svg" 
+              alt="Lola María - Panadería y Comida Casera" 
+             
+            />
         </motion.h1>
 
         <motion.p

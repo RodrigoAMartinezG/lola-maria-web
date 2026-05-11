@@ -35,12 +35,11 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="#inicio" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-full bg-terracotta flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
-              <span className="text-cream font-serif text-xl font-bold">L</span>
-            </div>
-            <span className="font-serif text-xl font-semibold text-dark-brown tracking-wide">
-              Lola Maria
-            </span>
+            <img 
+              src="/images/logo.svg" 
+              alt="Lola María - Panadería y Comida Casera" 
+              className="h-12 w-auto transition-transform duration-300 group-hover:scale-105"
+            />
           </a>
 
           {/* Desktop Navigation */}
