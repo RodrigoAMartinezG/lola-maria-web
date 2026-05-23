@@ -113,18 +113,17 @@ export default function About() {
             </h2>
             <div className="space-y-6 text-warm-brown/80 leading-relaxed">
               <p>
-                En Lola Maria, cada receta cuenta una historia. Somos una pastelería 
-                argentina dedicada a preservar los sabores auténticos de nuestra tierra, 
-                utilizando ingredientes frescos y técnicas tradicionales.
+                En Lola Maria, cada receta cuenta una historia. 
+                Somos una panadería y casa de comidas caseras dedicada a mantener vivos los sabores auténticos de siempre, 
+                con ingredientes frescos y mucho amor en cada preparación.
               </p>
               <p>
-                Desde nuestras empanadas jugosas hasta nuestros canelones rellenos 
-                con amor, cada plato es preparado con dedicación y pasión por la 
-                buena cocina argentina.
+               Desde el pan recién horneado y las facturas calentitas, hasta tortas personalizadas, 
+               pastas, tartas y comidas caseras para compartir en familia, 
+               todo lo que hacemos nace del amor hacia la cocina hecha como en casa.
               </p>
               <p>
-                Nuestro compromiso es llevar a tu mesa el verdadero sabor de Argentina, 
-                con la calidez y hospitalidad que nos caracteriza.
+                Nuestro compromiso es llevar a tu mesa sabores ricos, caseros y auténticos, acompañados de la calidez y dedicación que nos representa.
               </p>
             </div>
 

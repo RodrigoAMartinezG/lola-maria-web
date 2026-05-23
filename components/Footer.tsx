@@ -51,9 +51,8 @@ export default function Footer() {
               Contacto
             </h4>
             <div className="space-y-3 text-sm text-cream/50">
-              <p>Buenos Aires, Argentina</p>
-              <p>Pedidos: (011) XXX-XXXX</p>
-              <p>WhatsApp: +54 9 XXX XXXX</p>
+              <p>Gral Urquiza 116, Acassuso, Buenos Aires, Argentina</p>
+              <p>WhatsApp: +54 9 11 2558-8182</p>
             </div>
             {/* Social */}
             <div className="flex items-center gap-4 mt-6">

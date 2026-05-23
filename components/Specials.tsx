@@ -135,7 +135,7 @@ export default function Specials() {
           className="text-center mt-14"
         >
           <p className="text-warm-brown/60 text-sm italic">
-            Y mucho más... Consulta por nuestro menú completo
+            Y mucho más... Consulta por nuestro menú completo y comidas personalizadas.
           </p>
         </motion.div>
       </div>

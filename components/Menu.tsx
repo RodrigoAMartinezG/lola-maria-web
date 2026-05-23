@@ -9,12 +9,12 @@ const menuCategories = [
     name: 'Empanadas',
     icon: '🥟',
     items: [
-      { name: 'Empanadas de Carne', price: '$2.500', desc: 'Carne cortada a cuchillo, cebolla, morrón, ají verde, huevo, aceitunas y comino' },
-      { name: 'Empanadas de Pollo', price: '$2.500', desc: 'Pechuga de pollo desmenuzada, cebolla, morrón, huevo y aceitunas' },
-      { name: 'Jamón y Queso', price: '$2.300', desc: 'Jamón cocido y queso muzzarella gratinado' },
-      { name: 'Empanadas de Verdura', price: '$2.300', desc: 'Mix de verduras de estación con queso y especias' },
-      { name: 'Empanadas de Humita', price: '$2.500', desc: 'Choclo rallado, queso y albahaca fresca' },
-      { name: 'Empanadas Cabral', price: '$2.800', desc: 'Carne, huevo, aceitunas y pasas de uva' },
+      { name: 'Empanadas de Carne', desc: 'Carne cortada a cuchillo, cebolla, morrón, ají verde, huevo, aceitunas y comino' },
+      { name: 'Empanadas de Pollo', desc: 'Pechuga de pollo desmenuzada, cebolla, morrón, huevo y aceitunas' },
+      { name: 'Jamón y Queso', desc: 'Jamón cocido y queso muzzarella gratinado' },
+      { name: 'Empanadas de Verdura', desc: 'Mix de verduras de estación con queso y especias' },
+      { name: 'Empanadas de Humita', desc: 'Choclo rallado, queso y albahaca fresca' },
+      { name: 'Empanadas Cabral', desc: 'Carne, huevo, aceitunas y pasas de uva' },
     ],
   },
   {
@@ -22,9 +22,9 @@ const menuCategories = [
     name: 'Canelones',
     icon: '🍝',
     items: [
-      { name: 'Canelones de Carne', price: '$6.500', desc: 'Rellenos de carne y verdura, bañados en salsa tomate y queso muzzarella' },
-      { name: 'Canelones de Verdura', price: '$5.800', desc: 'Rellenos de espinaca y ricotta, con salsa bechamel' },
-      { name: 'Canelones Ricotta y Espinaca', price: '$5.800', desc: 'Combinación perfecta de ricotta fresca y espinaca' },
+      { name: 'Canelones de Carne',  desc: 'Rellenos de carne y verdura, bañados en salsa tomate y queso muzzarella' },
+      { name: 'Canelones de Verdura',  desc: 'Rellenos de espinaca y ricotta, con salsa bechamel' },
+      { name: 'Canelones Ricotta y Espinaca', desc: 'Combinación perfecta de ricotta fresca y espinaca' },
     ],
   },
   {
@@ -32,11 +32,11 @@ const menuCategories = [
     name: 'Platos Principales',
     icon: '🍗',
     items: [
-      { name: 'Pollo con Papas al Horno', price: '$8.500', desc: 'Pollo marinado con hierbas, papas doradas y vegetales de estación' },
-      { name: 'Milanesa con Papas', price: '$9.200', desc: 'Milanesa napolina con papas fritas y ensalada' },
-      { name: 'Lasaña de Carne', price: '$7.800', desc: 'Capas de pasta, carne ragú, salsa bechamel y queso gratinado' },
-      { name: 'Sorrentinos Caseros', price: '$7.200', desc: 'Sorrentinos de ricotta y jamón con salsa de tomate' },
-      { name: 'Empanada Gigante', price: '$5.500', desc: 'Empanada individual para llevar, rellena a elección' },
+      { name: 'Pollo con Papas al Horno', desc: 'Pollo marinado con hierbas, papas doradas y vegetales de estación' },
+      { name: 'Milanesa con Papas', desc: 'Milanesa napolina con papas fritas y ensalada' },
+      { name: 'Lasaña de Carne', desc: 'Capas de pasta, carne ragú, salsa bechamel y queso gratinado' },
+      { name: 'Sorrentinos Caseros', desc: 'Sorrentinos de ricotta y jamón con salsa de tomate' },
+      { name: 'Empanada Gigante', desc: 'Empanada individual para llevar, rellena a elección' },
     ],
   },
   {
@@ -44,12 +44,12 @@ const menuCategories = [
     name: 'Pastelería',
     icon: '🧁',
     items: [
-      { name: 'Medialunas de Manteca', price: '$1.200', desc: 'Medialunas artesanales de manteca, crocantes por fuera y suaves por dentro' },
-      { name: 'Facturas Variadas', price: '$1.100', desc: 'Sartenes, divociones, rosquitas y más. Consultá disponibilidad diaria' },
-      { name: 'Torta de Chocolate', price: '$3.500', desc: 'Bizcochuelo de chocolate con ganache y frutos rojos' },
-      { name: 'Tarta de Jamón y Queso', price: '$4.200', desc: 'Tarta individual con jamón, queso y salsa bechamel' },
-      { name: 'Tarta de Verdura', price: '$3.800', desc: 'Tarta con espinaca, ricotta y vegetales de estación' },
-      { name: 'Dulce de Leche Brownie', price: '$2.800', desc: 'Brownie de chocolate con corazón de dulce de leche' },
+      { name: 'Medialunas de Manteca', desc: 'Medialunas artesanales de manteca, crocantes por fuera y suaves por dentro' },
+      { name: 'Facturas Variadas', desc: 'Sartenes, divociones, rosquitas y más. Consultá disponibilidad diaria' },
+      { name: 'Torta de Chocolate', desc: 'Bizcochuelo de chocolate con ganache y frutos rojos' },
+      { name: 'Tarta de Jamón y Queso', desc: 'Tarta individual con jamón, queso y salsa bechamel' },
+      { name: 'Tarta de Verdura', desc: 'Tarta con espinaca, ricotta y vegetales de estación' },
+      { name: 'Dulce de Leche Brownie', desc: 'Brownie de chocolate con corazón de dulce de leche' },
     ],
   },
 ];
@@ -113,12 +113,6 @@ export default function Menu() {
                     whileHover={{ x: 8 }}
                     className="group flex items-start gap-4 p-5 rounded-xl hover:bg-white/50 transition-all duration-300"
                   >
-                    {/* Price */}
-                    <div className="flex-shrink-0 w-20 text-right">
-                      <span className="font-serif text-lg font-bold text-terracotta">
-                        {item.price}
-                      </span>
-                    </div>
                     
                     {/* Divider */}
                     <div className="flex-shrink-0 w-8 h-[1px] bg-terracotta/20 group-hover:bg-terracotta/40 transition-colors" />
@@ -150,7 +144,7 @@ export default function Menu() {
             📞 <strong>Hacé tu pedido con anticipación</strong> para garantizar frescura
           </p>
           <p className="text-warm-brown/50 text-xs mt-2">
-            Precios sujetos a cambio sin previo aviso · Todos los platos pueden personalizarse
+            Precios sujetos a cambio sin previo aviso ·Todos los platos pueden personalizarse 
           </p>
         </motion.div>
       </div>

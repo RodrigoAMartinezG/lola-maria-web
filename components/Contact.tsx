@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { MapPin, Phone, Clock, Instagram, Facebook, Mail, Send, CheckCircle } from 'lucide-react';
 
 // ⚠️ CAMBIÁ este número por el de WhatsApp de Lola Maria
-const WHATSAPP_NUMBER = '5491112345678';
+const WHATSAPP_NUMBER = '+5491125588182';
 
 interface OrderForm {
   name: string;
@@ -91,7 +91,7 @@ export default function Contact() {
               <MapPin size={24} className="text-terracotta" />
             </div>
             <h3 className="font-serif text-xl font-bold text-dark-brown mb-3">
-              Dirección
+              Dirección: Gral Urquiza 116, Acassuso. 
             </h3>
             <p className="text-warm-brown/70 text-sm leading-relaxed">
               Buenos Aires, Argentina
@@ -115,9 +115,7 @@ export default function Contact() {
               Horarios
             </h3>
             <div className="text-warm-brown/70 text-sm space-y-2">
-              <p><span className="font-medium text-dark-brown">Lun - Vie:</span> 8:00 - 20:00</p>
-              <p><span className="font-medium text-dark-brown">Sábados:</span> 9:00 - 21:00</p>
-              <p><span className="font-medium text-dark-brown">Domingos:</span> 9:00 - 14:00</p>
+              <p><span className="font-medium text-dark-brown">Lunes a Sabados:</span> 8:00 - 20:00</p>
             </div>
           </motion.div>
 
@@ -136,8 +134,7 @@ export default function Contact() {
               Pedidos
             </h3>
             <div className="text-warm-brown/70 text-sm space-y-2">
-              <p><span className="font-medium text-dark-brown">Teléfono:</span> (011) XXX-XXXX</p>
-              <p><span className="font-medium text-dark-brown">WhatsApp:</span> +54 9 XXX XXXX</p>
+              <p><span className="font-medium text-dark-brown">WhatsApp:</span> +54 9 11 2558-8182</p>
               <p className="text-xs text-terracotta/70 mt-2">¡Hacé tu pedido por WhatsApp!</p>
             </div>
           </motion.div>
