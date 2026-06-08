@@ -2,11 +2,14 @@
 
 import { X } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import { createPortal } from 'react-dom';
 
 export default function DailyMenu() {
   const [isOpen, setIsOpen] = useState(true);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     if (isOpen) {
       document.body.style.overflow = 'hidden';
     } else {
@@ -57,10 +60,10 @@ export default function DailyMenu() {
         <span className="hidden sm:inline">Menú del Día</span>
       </button>
 
-      {/* Modal Overlay */}
-      {isOpen && (
+      {/* Modal - rendered via Portal to escape stacking contexts */}
+      {isOpen && mounted && createPortal(
         <div
-          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/70 backdrop-blur-sm animate-fade-in md:items-center"
+          className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/70 backdrop-blur-sm animate-fade-in"
           onClick={handleBackdropClick}
           onKeyDown={handleKeyDown}
           role="dialog"
@@ -68,7 +71,7 @@ export default function DailyMenu() {
           aria-label="Menú del día"
         >
           {/* Modal Content */}
-          <div className="relative bg-cream shadow-2xl w-full h-full md:max-w-2xl md:h-auto md:mx-4 md:max-h-[90vh] md:rounded-2xl overflow-hidden animate-slide-up flex flex-col">
+          <div className="relative bg-cream shadow-2xl w-[95vw] max-w-2xl h-[85vh] md:h-auto md:max-h-[90vh] md:rounded-2xl overflow-hidden animate-slide-up flex flex-col">
             {/* Close Button - always visible */}
             <button
               onClick={() => setIsOpen(false)}
@@ -89,7 +92,7 @@ export default function DailyMenu() {
             </div>
 
             {/* Image - scrollable area */}
-            <div className="flex-1 overflow-y-auto overscroll-contain p-4 md:p-6">
+            <div className="flex-1 overflow-y-auto overscroll-contain p-4 md:p-6" style={{ WebkitOverflowScrolling: 'touch' }}>
               <div className="relative rounded-xl overflow-hidden shadow-lg bg-white">
                 <img
                   src="/images/menu-del-dia.png"
@@ -107,7 +110,8 @@ export default function DailyMenu() {
               </p>
             </div>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </>
   );
