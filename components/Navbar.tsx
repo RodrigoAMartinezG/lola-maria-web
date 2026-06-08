@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { Menu as MenuIcon, X } from 'lucide-react';
+import DailyMenu from '@/components/DailyMenu';
 
 const navLinks = [
   { name: 'Inicio', href: '#inicio' },
@@ -53,6 +54,7 @@ export default function Navbar() {
                 {link.name}
               </a>
             ))}
+            <DailyMenu />
           </div>
 
           {/* Mobile Menu Button */}
